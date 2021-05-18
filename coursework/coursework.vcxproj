@@ -18,21 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Movable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="Hero.h" />
+    <ClInclude Include="Movable.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png" />
   </ItemGroup>
-=======
->>>>>>> 30842d5d5fb981c6402439002ca2117279af395a
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{F27702E9-F495-40AD-B711-A79F523AFDCB}</ProjectGuid>
@@ -144,12 +143,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-<<<<<<< HEAD
-=======
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
->>>>>>> 30842d5d5fb981c6402439002ca2117279af395a
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

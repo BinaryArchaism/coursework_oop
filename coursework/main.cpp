@@ -1,18 +1,10 @@
 #include <SFML/Graphics.hpp>
 
-<<<<<<< HEAD
 #include "hero.h"
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Test", sf::Style::Close);
 	Hero hero(0, 0);
-=======
-int main()
-{
-	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
->>>>>>> 30842d5d5fb981c6402439002ca2117279af395a
 
 	while (window.isOpen())
 	{
@@ -22,20 +14,24 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
-<<<<<<< HEAD
 		window.clear();
 
 		hero.show(&window);
 
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+			hero.move(hero.up);
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+			hero.move(hero.left);
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+			hero.move(hero.right);
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+			hero.move(hero.down);
+		}
+
 		window.display();
 	}
-=======
-
-		window.clear();
-		window.draw(shape);
-		window.display();
-	}
-
->>>>>>> 30842d5d5fb981c6402439002ca2117279af395a
 	return 0;
 }

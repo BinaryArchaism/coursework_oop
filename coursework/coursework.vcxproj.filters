@@ -18,11 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="Drawable.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Hero.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Movable.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,12 +35,13 @@
     <ClInclude Include="Hero.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Movable.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png">
       <Filter>Исходные файлы</Filter>
     </Image>
-=======
->>>>>>> 30842d5d5fb981c6402439002ca2117279af395a
   </ItemGroup>
 </Project>
