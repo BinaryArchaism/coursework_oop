@@ -19,21 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hero.cpp" />
+    <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="Hero.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hero.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="Hero.h" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="images\step.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="images\background.png" />
-    <Image Include="images\grayNinja.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="images\NormalFont.ttf" />
+    <Image Include="background.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
