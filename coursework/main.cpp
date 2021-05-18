@@ -1,10 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 #include "hero.h"
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Test", sf::Style::Close);
 	Hero hero(0, 0);
+	Object wall(100, 100);
 
 	while (window.isOpen())
 	{
@@ -29,6 +31,9 @@ int main() {
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 			hero.move(hero.down);
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
+			std::cout<<hero.getDistanceToObj(wall);
 		}
 
 		window.display();

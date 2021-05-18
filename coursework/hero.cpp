@@ -32,6 +32,7 @@ void Hero::move(int direction) {
 	}
 }
 
-//int Hero::getDistanceToObj(Object &obj) {
-//	int x_dist = 444-this->x;
-//}
+int Hero::getDistanceToObj(Object &obj) {
+	int x_dist = abs(obj.x -this->x);
+	return x_dist;
+}

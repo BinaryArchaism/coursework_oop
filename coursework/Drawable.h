@@ -1,6 +1,6 @@
-#include <SFML/Graphics.hpp>
-
-class Drawable {
-protected:
-	virtual void show(sf::RenderWindow*) = 0;
+#pragma once
+class Drawable
+{
+public:
+	virtual void show(sf::RenderWindow* window) = 0;
 };

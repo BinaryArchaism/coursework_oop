@@ -1,8 +1,8 @@
+#pragma once
 class Movable
 {
-protected:
-	virtual void move(int direction) = 0;
 public:
+	virtual void move(int direction) = 0;
 	enum directions {
 		left,
 		right,
