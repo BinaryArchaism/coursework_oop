@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Movable.cpp" />
+    <ClCompile Include="Object.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="Movable.h" />
+    <ClInclude Include="Object.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png" />

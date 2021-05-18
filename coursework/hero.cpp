@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Hero.h"
+#include "Object.h"
 
 Hero::Hero(int x, int y) : x(x), y(y) {
 	texture.loadFromFile("background.png");
@@ -30,3 +31,7 @@ void Hero::move(int direction) {
 		break;
 	}
 }
+
+//int Hero::getDistanceToObj(Object &obj) {
+//	int x_dist = 444-this->x;
+//}
