@@ -31,7 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png" />
-    <Image Include="bicycle.jpg" />
+    <Image Include="hero_ex.png" />
+    <Image Include="Object_ex.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

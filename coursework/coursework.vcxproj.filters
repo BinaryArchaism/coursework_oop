@@ -43,7 +43,10 @@
     <Image Include="background.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="bicycle.jpg">
+    <Image Include="Object_ex.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="hero_ex.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>

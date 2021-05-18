@@ -1,9 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include "Hero.h"
-#include "Object.h"
+
+#include <iostream>
 
 Hero::Hero(int x, int y) : x(x), y(y) {
-	texture.loadFromFile("background.png");
+	texture.loadFromFile("hero_ex.png");
 	sprite.setTexture(texture);
 }
 
@@ -34,5 +35,11 @@ void Hero::move(int direction) {
 
 int Hero::getDistanceToObj(Object &obj) {
 	int x_dist = abs(obj.x -this->x);
-	return x_dist;
+	int y_dist = abs(obj.y -this->y);
+	int result = sqrt((x_dist*x_dist) + (y_dist*y_dist));
+	return result;
+}
+
+void Hero::printer() {
+	std::cout << "it HERO-parent\n";
 }

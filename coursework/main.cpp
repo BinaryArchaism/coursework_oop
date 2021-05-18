@@ -5,8 +5,10 @@
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Test", sf::Style::Close);
+	window.setFramerateLimit(30);
+
 	Hero hero(0, 0);
-	Object wall(100, 100);
+	Object obj(100, 100);
 
 	while (window.isOpen())
 	{
@@ -18,6 +20,7 @@ int main() {
 		}
 		window.clear();
 
+		obj.show(&window);
 		hero.show(&window);
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
@@ -32,8 +35,13 @@ int main() {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 			hero.move(hero.down);
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
-			std::cout<<hero.getDistanceToObj(wall);
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::E)) {
+			if (hero.getDistanceToObj(obj) < 80) {
+				std::cout << "Too close\n";
+			}
+			else {
+				std::cout << "Too far\n";
+			}
 		}
 
 		window.display();

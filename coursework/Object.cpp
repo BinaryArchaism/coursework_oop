@@ -2,7 +2,7 @@
 #include "Object.h"
 
 Object::Object(int x, int y) : x(x), y(y) {
-	texture.loadFromFile("bicycle.jpg");
+	texture.loadFromFile("Object_ex.png");
 	sprite.setTexture(texture);
 }
 
