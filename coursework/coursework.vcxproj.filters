@@ -18,6 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Drawable.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -37,5 +38,7 @@
     <Image Include="background.png">
       <Filter>Исходные файлы</Filter>
     </Image>
+=======
+>>>>>>> 30842d5d5fb981c6402439002ca2117279af395a
   </ItemGroup>
 </Project>
