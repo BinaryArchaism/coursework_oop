@@ -3,9 +3,14 @@
 
 #include <iostream>
 
-Hero::Hero(int x, int y) : x(x), y(y) {
+Hero::Hero() : x(0), y(0) {
 	texture.loadFromFile("hero_ex.png");
 	sprite.setTexture(texture);
+}
+
+Hero::Hero(int x, int y) : Hero() {
+	this->x = x;
+	this->y = y;
 }
 
 void Hero::show(sf::RenderWindow* window) {

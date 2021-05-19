@@ -13,6 +13,7 @@ private:
 	int x;
 	int y;
 public:
+	Object();
 	Object(int x, int y);
 	void show(sf::RenderWindow* window) override;
 };

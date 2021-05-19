@@ -12,6 +12,7 @@ private:
 	int x;
 	int y;
 public:
+	Hero();
 	Hero(int x, int y);
 	void show(sf::RenderWindow* window) override;
 	void move(int direction) override;
