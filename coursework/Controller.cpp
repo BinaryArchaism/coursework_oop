@@ -7,7 +7,6 @@ Controller::Controller(sf::RenderWindow* window, Hero* hero, Object* obj) {
 	this->obj = obj;
 	memset(CurrentKeyState, false, sizeof(CurrentKeyState));
 	memset(PreviousKeyState, false, sizeof(PreviousKeyState));
-
 }
 
 void Controller::pollEvent()
@@ -19,7 +18,7 @@ void Controller::pollEvent()
 	}
 }
 
-void Controller::getMovementInput()
+void Controller::getInput()
 {
 	for (unsigned int i = 0; i < sf::Keyboard::KeyCount; ++i) {
 		PreviousKeyState[i] = CurrentKeyState[i];
@@ -47,28 +46,6 @@ void Controller::getMovementInput()
 	if (KeyHeld(sf::Keyboard::S)) {
 		(*hero).move((*hero).down);
 	}
-
-	/*if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::E) {
-		if ((*hero).getDistanceToObj((*obj)) < 80) {
-			std::cout << "Too close\n";
-		}
-		else {
-			std::cout << "Too far\n";
-		}
-	}
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-		(*hero).move((*hero).up);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-		(*hero).move((*hero).left);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-		(*hero).move((*hero).right);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-		(*hero).move((*hero).down);
-	}*/
 }
 
 bool Controller::KeyPressed(sf::Keyboard::Key Key)

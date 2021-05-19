@@ -4,6 +4,7 @@
 #include "hero.h"
 #include "Object.h"
 #include "Controller.h"
+#include "View.h"
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Test", sf::Style::Close);
@@ -12,14 +13,18 @@ int main() {
 	Hero hero(0, 0);
 	Object obj(100, 100);
 	Controller controller(&window, &hero, &obj);
+	View view(&window, &hero, &obj);
 
 	while (window.isOpen())
 	{
 		controller.pollEvent();
+
 		window.clear();
-		obj.show(&window);
-		hero.show(&window);
-		controller.getMovementInput();
+
+		view.show();
+
+		controller.getInput();
+
 		window.display();
 	}
 	return 0;
