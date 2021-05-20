@@ -41,11 +41,6 @@ void Hero::move(int direction) {
 }
 
 int Hero::getDistanceToObj(Object &obj) {	
-	/*sf::Flo
-	sf::Vector2f obj_up_left_corner = sf::Vector2f(obj.x-obj.sprite_w/2, obj.y-obj.sprite_h/2);
-	sf::Vector2f obj_up_right_corner = sf::Vector2f(obj.x+obj.sprite_w/2, obj.y-obj.sprite_h/2);
-	sf::Vector2f obj_down_left_corner = sf::Vector2f(obj.x-obj.sprite_w/2, obj.y+obj.sprite_h/2);
-	sf::Vector2f obj_down_right_corner = sf::Vector2f(obj.x+obj.sprite_w/2, obj.y+obj.sprite_h/2);*/
 	int x_dist = abs(obj.x -this->x);
 	int y_dist = abs(obj.y -this->y);
 	int result = sqrt((x_dist*x_dist) + (y_dist*y_dist));

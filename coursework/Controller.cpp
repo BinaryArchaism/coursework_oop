@@ -40,8 +40,7 @@ void Controller::getInput()
 	}
 
 	if (KeyHeld(sf::Keyboard::W)) {
-		if (!(*hero).checkCollison((*obj)))
-			(*hero).move((*hero).up);
+		(*hero).move((*hero).up);
 	}
 	if (KeyHeld(sf::Keyboard::A)) {
 		(*hero).move((*hero).left);

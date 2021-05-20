@@ -6,7 +6,6 @@
 class Object : public Drawable
 {
 	friend class Hero;
-	//	friend int Hero::getDistanceToObj(Object &obj);
 protected:
 	sf::Texture texture;
 	sf::Sprite sprite;
