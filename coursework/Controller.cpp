@@ -25,6 +25,10 @@ void Controller::getInput()
 		CurrentKeyState[i] = sf::Keyboard::isKeyPressed((sf::Keyboard::Key)i);
 	}
 
+	if (KeyPressed(sf::Keyboard::C)) {
+		std::cout << "Collision: " << (*hero).checkCollison((*obj)) << "\n";
+	}
+
 	if (KeyPressed(sf::Keyboard::E)) {
 		if ((*hero).getDistanceToObj((*obj)) < 64) {
 			(*obj).react();
@@ -36,7 +40,8 @@ void Controller::getInput()
 	}
 
 	if (KeyHeld(sf::Keyboard::W)) {
-		(*hero).move((*hero).up);
+		if (!(*hero).checkCollison((*obj)))
+			(*hero).move((*hero).up);
 	}
 	if (KeyHeld(sf::Keyboard::A)) {
 		(*hero).move((*hero).left);

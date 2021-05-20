@@ -19,5 +19,5 @@ public:
 	void show(sf::RenderWindow* window) override;
 	void move(int direction) override;
 	int getDistanceToObj(Object&);
-	virtual void printer();
+	bool checkCollison(Object&);
 };

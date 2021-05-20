@@ -40,7 +40,7 @@ void Hero::move(int direction) {
 	}
 }
 
-int Hero::getDistanceToObj(Object &obj) {
+int Hero::getDistanceToObj(Object &obj) {	
 	/*sf::Flo
 	sf::Vector2f obj_up_left_corner = sf::Vector2f(obj.x-obj.sprite_w/2, obj.y-obj.sprite_h/2);
 	sf::Vector2f obj_up_right_corner = sf::Vector2f(obj.x+obj.sprite_w/2, obj.y-obj.sprite_h/2);
@@ -52,6 +52,7 @@ int Hero::getDistanceToObj(Object &obj) {
 	return result;
 }
 
-void Hero::printer() {
-	std::cout << "it HERO-parent\n";
+bool Hero::checkCollison(Object &obj) {
+	if (getDistanceToObj(obj) < 64) return true;
+	else return false;
 }
