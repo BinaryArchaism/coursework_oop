@@ -35,7 +35,7 @@ void Controller::getInput()
 			std::cout << "Reaction: obj moved\n";
 		}
 		else {
-			std::cout << "Too far\n";
+			std::cout << "Too far, no reaction\n";
 		}
 	}
 
