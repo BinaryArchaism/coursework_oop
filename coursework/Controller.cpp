@@ -26,7 +26,7 @@ void Controller::getInput()
 	}
 
 	if (KeyPressed(sf::Keyboard::E)) {
-		if ((*hero).getDistanceToObj((*obj)) < 80) {
+		if ((*hero).getDistanceToObj((*obj)) < 64) {
 			std::cout << "Too close\n";
 		}
 		else {

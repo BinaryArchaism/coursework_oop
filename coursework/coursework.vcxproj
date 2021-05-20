@@ -35,7 +35,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="background.png" />
+    <Image Include="hero.bmp" />
     <Image Include="hero_ex.png" />
+    <Image Include="obj.bmp" />
     <Image Include="Object_ex.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

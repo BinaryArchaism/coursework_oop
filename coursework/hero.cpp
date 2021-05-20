@@ -4,8 +4,10 @@
 #include <iostream>
 
 Hero::Hero() : x(0), y(0) {
-	texture.loadFromFile("hero_ex.png");
+	texture.loadFromFile("hero.bmp");
 	sprite.setTexture(texture);
+	sprite_w = sprite.getTextureRect().width;
+	sprite_h = sprite.getTextureRect().height;
 }
 
 Hero::Hero(int x, int y) : Hero() {
@@ -14,7 +16,7 @@ Hero::Hero(int x, int y) : Hero() {
 }
 
 void Hero::show(sf::RenderWindow* window) {
-	sprite.setPosition(x, y);
+	sprite.setPosition(x - sprite_w / 2, y - sprite_h / 2);
 	(*window).draw(sprite);
 }
 

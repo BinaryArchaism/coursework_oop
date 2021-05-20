@@ -9,6 +9,8 @@ class Hero : public Drawable, public Movable
 private:
 	sf::Texture texture;
 	sf::Sprite sprite;
+	int sprite_h;
+	int sprite_w;
 	int x;
 	int y;
 public:

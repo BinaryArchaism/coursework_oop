@@ -10,8 +10,8 @@ int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Test", sf::Style::Close);
 	window.setFramerateLimit(30);
 
-	Hero hero(0, 0);
-	Object obj(100, 100);
+	Hero hero(64, 64);
+	Object obj(250, 150);
 	Controller controller(&window, &hero, &obj);
 	View view(&window, &hero, &obj);
 

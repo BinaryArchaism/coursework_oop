@@ -61,5 +61,11 @@
     <Image Include="hero_ex.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
+    <Image Include="obj.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="hero.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
   </ItemGroup>
 </Project>
