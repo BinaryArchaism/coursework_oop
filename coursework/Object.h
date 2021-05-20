@@ -7,7 +7,7 @@ class Object : public Drawable
 {
 	friend class Hero;
 	//	friend int Hero::getDistanceToObj(Object &obj);
-private:
+protected:
 	sf::Texture texture;
 	sf::Sprite sprite;
 	int sprite_h;
@@ -18,4 +18,5 @@ public:
 	Object();
 	Object(int x, int y);
 	void show(sf::RenderWindow* window) override;
+	virtual void react() = 0;
 };
