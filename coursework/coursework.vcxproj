@@ -19,30 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Controller.cpp" />
-    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="iTank.cpp" />
+    <ClCompile Include="Location.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Object.cpp" />
-    <ClCompile Include="View.cpp" />
-    <ClCompile Include="Wall.cpp" />
-    <ClCompile Include="Wall2.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="aTank.cpp" />
+    <ClCompile Include="redTank.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Controller.h" />
-    <ClInclude Include="Drawable.h" />
-    <ClInclude Include="Hero.h" />
-    <ClInclude Include="Movable.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="View.h" />
-    <ClInclude Include="Wall.h" />
-    <ClInclude Include="Wall2.h" />
+    <ClInclude Include="iTank.h" />
+    <ClInclude Include="Location.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="aTank.h" />
+    <ClInclude Include="redTank.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="background.png" />
-    <Image Include="hero.bmp" />
-    <Image Include="hero_ex.png" />
-    <Image Include="obj.bmp" />
-    <Image Include="Object_ex.png" />
+    <Image Include="assets\blueTank.png" />
+    <Image Include="assets\blueTankArmored.png" />
+    <Image Include="assets\blueWeapon.png" />
+    <Image Include="assets\redTank.png" />
+    <Image Include="assets\redTankArmored.png" />
+    <Image Include="assets\redWeapon.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

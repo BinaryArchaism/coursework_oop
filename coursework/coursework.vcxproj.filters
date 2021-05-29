@@ -13,71 +13,77 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Tanks">
+      <UniqueIdentifier>{145bec34-2531-42d8-bd3a-7f1bbbae5532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Tanks">
+      <UniqueIdentifier>{61b41c3d-86bf-4862-8493-6bc02ee8d94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Walls">
+      <UniqueIdentifier>{08304619-efaf-4f91-99f8-70ae92ab02aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Walls">
+      <UniqueIdentifier>{277fcef0-8280-41e4-b410-0d4d1861cc63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\assets">
+      <UniqueIdentifier>{05496400-2b26-41fd-b42b-796e7269d268}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Point.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Location.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="aTank.cpp">
+      <Filter>Исходные файлы\Tanks</Filter>
+    </ClCompile>
+    <ClCompile Include="iTank.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="redTank.cpp">
+      <Filter>Исходные файлы\Tanks</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Hero.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Controller.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="View.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Wall.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Wall2.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Drawable.h">
+    <ClInclude Include="Point.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Hero.h">
+    <ClInclude Include="Location.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Movable.h">
+    <ClInclude Include="aTank.h">
+      <Filter>Файлы заголовков\Tanks</Filter>
+    </ClInclude>
+    <ClInclude Include="iTank.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Controller.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="View.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Wall.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Wall2.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="redTank.h">
+      <Filter>Файлы заголовков\Tanks</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="background.png">
-      <Filter>Файлы ресурсов</Filter>
+    <Image Include="assets\redWeapon.png">
+      <Filter>Файлы ресурсов\assets</Filter>
     </Image>
-    <Image Include="Object_ex.png">
-      <Filter>Файлы ресурсов</Filter>
+    <Image Include="assets\blueTank.png">
+      <Filter>Файлы ресурсов\assets</Filter>
     </Image>
-    <Image Include="hero_ex.png">
-      <Filter>Файлы ресурсов</Filter>
+    <Image Include="assets\blueTankArmored.png">
+      <Filter>Файлы ресурсов\assets</Filter>
     </Image>
-    <Image Include="obj.bmp">
-      <Filter>Файлы ресурсов</Filter>
+    <Image Include="assets\blueWeapon.png">
+      <Filter>Файлы ресурсов\assets</Filter>
     </Image>
-    <Image Include="hero.bmp">
-      <Filter>Файлы ресурсов</Filter>
+    <Image Include="assets\redTank.png">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </Image>
+    <Image Include="assets\redTankArmored.png">
+      <Filter>Файлы ресурсов\assets</Filter>
     </Image>
   </ItemGroup>
 </Project>

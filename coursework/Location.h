@@ -4,6 +4,7 @@ class Location
 protected:
 	int x, y;
 public:
+	Location();
 	Location(int x, int y);
 	~Location();
 	int getX();
