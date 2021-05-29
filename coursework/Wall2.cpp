@@ -1,7 +1,7 @@
 #include "Wall2.h"
 
 Wall2::Wall2() : Object() {
-	texture.loadFromFile("obj.bmp");
+	texture.loadFromFile("Object_ex.png");
 	sprite.setTexture(texture);
 	sprite_w = sprite.getTextureRect().width;
 	sprite_h = sprite.getTextureRect().height;
