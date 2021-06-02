@@ -12,10 +12,10 @@ protected:
 	sf::Sprite weaponSprite;
 	int sprite_h;
 	int sprite_w;
-public:
+public:	
 	aTank();
 	aTank(int x, int y);
-	virtual void show();
-	virtual void hide();
+	virtual void show(sf::RenderWindow*) = 0;
+	virtual void hide(sf::RenderWindow*) = 0;
 };
 

@@ -7,13 +7,12 @@ class Point : public Location
 {
 protected:
 	bool visible;
-	sf::RenderWindow* window;
 public:
-	Point(sf::RenderWindow* window);
-	Point(int x, int y, sf::RenderWindow* window);
-	void moveTo(int x, int y);
+	Point();
+	Point(int x, int y);
+	void moveTo(int x, int y, sf::RenderWindow*);
 	bool isVisible();
-	virtual void show() = 0;
-	virtual void hide() = 0;
+	virtual void show(sf::RenderWindow*) = 0;
+	virtual void hide(sf::RenderWindow*) = 0;
 };
 
