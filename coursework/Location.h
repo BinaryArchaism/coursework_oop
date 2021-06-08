@@ -2,9 +2,10 @@
 class Location
 {
 protected:
-	int x, y;
+	// Координаты
+	int x;
+	int y;
 public:
-	Location();
 	Location(int x, int y);
 	~Location();
 	int getX();
@@ -12,4 +13,3 @@ public:
 	void setX(int x);
 	void setY(int y);
 };
-

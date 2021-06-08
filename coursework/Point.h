@@ -1,18 +1,20 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
 #include "Location.h"
 
 class Point : public Location
 {
 protected:
 	bool visible;
+	int colorR;
+	int colorG;
+	int colorB;
 public:
-	Point();
 	Point(int x, int y);
-	void moveTo(int x, int y, sf::RenderWindow*);
+	virtual ~Point();
 	bool isVisible();
-	virtual void show(sf::RenderWindow*) = 0;
-	virtual void hide(sf::RenderWindow*) = 0;
-};
+	void moveTo(int x, int y);
 
+	void virtual show() = 0;	//показать фигуру 
+	void virtual hide() = 0;    //спрятать фигуру 
+};
